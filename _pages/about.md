@@ -27,6 +27,39 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<style>
+  html:not([data-theme="dark"]) {
+    --global-bg-color: #fff8fb;
+    --global-text-color: #382f40;
+    --global-theme-color: #ad3269;
+    --global-hover-color: #58356f;
+  }
+
+  html:not([data-theme="dark"]) body {
+    background-color: #fff8fb;
+    color: #382f40;
+  }
+
+  html:not([data-theme="dark"]) h1,
+  html:not([data-theme="dark"]) h2,
+  html:not([data-theme="dark"]) h3 {
+    color: #58356f;
+  }
+
+  html:not([data-theme="dark"]) a {
+    color: #ad3269;
+  }
+
+  html:not([data-theme="dark"]) a:hover {
+    color: #b85c22;
+  }
+
+  ::selection {
+    background: #f8d5e5;
+    color: #382f40;
+  }
+</style>
+
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
