@@ -152,3 +152,10 @@ b {
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
+
+/* 标语左侧的橙色竖线，两种模式均生效 */
+html body .health-motto {
+  border-left: 4px solid #f39a56;
+  padding: 0.35rem 0 0.35rem 1rem;
+  margin: 1.5rem 0;
+}
