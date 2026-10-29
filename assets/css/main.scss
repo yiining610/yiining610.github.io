@@ -59,9 +59,10 @@ html:not([data-theme="dark"]) a:hover {
   color: #b85c22;
 }
 
+/* 日间、黑暗模式均使用橙色选中背景 */
 ::selection {
-  background: #f8d5e5;
-  color: #382f40;
+  background-color: #f39a56;
+  color: #291b12;
 }
 
 body,
@@ -125,4 +126,29 @@ h6 {
 strong,
 b {
   font-weight: 700;
+}
+
+/* 日间模式：深紫色重点文字 */
+:root {
+  --emphasis-color: #754093;
+}
+
+/* 黑暗模式：浅紫色重点文字 */
+html[data-theme="dark"] {
+  --emphasis-color: #d8b4f0;
+}
+
+strong,
+b {
+  font-weight: 700;
+  color: var(--emphasis-color);
+}
+
+/* 首页标语 */
+.health-motto {
+  color: var(--emphasis-color);
+  font-weight: 650;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
