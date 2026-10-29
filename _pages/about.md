@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: A little corner to wander, pause, and reflect.<br>
+  <a href="mailto:yiningliu610@tamu.edu">yiningliu610@tamu.edu</a>
 
 profile:
   align: right
@@ -27,6 +28,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-## Health comes first.
+<p class="health-motto"> Health comes first </p>
 
-I am a Ph.D. student in Urban and Regional Sciences at Texas A&M University. Drawing on a background in landscape architecture, I explore how environmental and social factors shape human behavior and mental health, and how landscape design can contribute to healthier lives for people.
+**About me:**
+I am a Ph.D. student in Urban and Regional Sciences at Texas A&M University. Drawing on a background in **landscape architecture**, I explore how environmental and social factors shape **human behavior and mental health** , and how landscape design can contribute to healthier lives for people.
