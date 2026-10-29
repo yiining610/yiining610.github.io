@@ -1,0 +1,128 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+html:not([data-theme="dark"]) {
+  --global-bg-color: #fff8fb;
+  --global-text-color: #382f40;
+  --global-theme-color: #ad3269;
+  --global-hover-color: #58356f;
+}
+
+html:not([data-theme="dark"]) body {
+  background-color: #fff8fb;
+  color: #382f40;
+}
+
+html:not([data-theme="dark"]) h1,
+html:not([data-theme="dark"]) h2,
+html:not([data-theme="dark"]) h3 {
+  color: #58356f;
+}
+
+html:not([data-theme="dark"]) a {
+  color: #ad3269;
+}
+
+html:not([data-theme="dark"]) a:hover {
+  color: #b85c22;
+}
+
+::selection {
+  background: #f8d5e5;
+  color: #382f40;
+}
+
+body,
+nav,
+button,
+input,
+select,
+textarea {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 400;
+}
+
+/* 所有标题 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 700;
+}
+
+/* 加粗文字 */
+strong,
+b {
+  font-weight: 700;
+}
+
+/* 正文字号与行距 */
+body {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar {
+  font-family: "Outfit", sans-serif !important;
+}
+body {
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+strong,
+b {
+  font-weight: 700;
+}
