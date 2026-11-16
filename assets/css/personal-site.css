@@ -59,7 +59,7 @@ body { min-height: 100vh; }
   margin-inline: auto;
   border-radius: 50%;
   object-fit: cover;
-  object-position: 72% center;
+  object-position: 93% center;
 }
 .label, .year { font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 h1, h2, h3 { color: var(--heading); font-weight: 600; line-height: 1.12; }
