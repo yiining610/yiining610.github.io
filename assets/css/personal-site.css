@@ -131,3 +131,5 @@ h3 { margin-block: .4rem .65rem; font-size: clamp(1.15rem, 2.1vw, 1.45rem); line
 @media (max-width: 760px) {
   .education-list { grid-template-columns: 1fr; }
 }
+
+.education-list cite { font-size: .875rem; }
