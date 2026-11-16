@@ -33,14 +33,13 @@ nav a { color: var(--heading); padding-block: .35rem; font-size: .875rem; font-w
 nav a:hover { text-decoration: underline; }
 
 section { padding-bottom: clamp(1.5rem, 4vw, 3rem); }
-body {
-  min-height: 100vh;
+body { min-height: 100vh; }
+.about, .site-footer {
   background:
-    radial-gradient(ellipse at 21% 16%, #b6b9f2, transparent 65%),
-    radial-gradient(ellipse at 92% 22%, #ffd2a5, transparent 63%),
-    linear-gradient(145deg, #f5f0eb, #f8e5ef 60%, #faeee3);
+    radial-gradient(ellipse at 35% 48%, #ecb6ce 0%, transparent 63%),
+    radial-gradient(ellipse at 65% 49%, #ffd0a2 0%, transparent 62%);
 }
-.about { padding-top: clamp(2rem, 5vw, 4rem); }
+.about { margin-bottom: clamp(1rem, 4vw, 3rem); padding-block: clamp(2.5rem, 6vw, 5.5rem); }
 .panel {
   padding: clamp(1.4rem, 5vw, 4rem);
   border-radius: clamp(1rem, 2.5vw, 2rem);
@@ -49,13 +48,13 @@ body {
 }
 .about-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr);
-  align-items: center;
-  gap: clamp(1.5rem, 5vw, 4rem);
+  justify-items: center;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  text-align: center;
 }
 .portrait {
   display: block;
-  width: min(100%, 22rem);
+  width: min(70vw, 17rem);
   aspect-ratio: 1;
   margin-inline: auto;
   border-radius: 50%;
@@ -66,9 +65,9 @@ body {
 h1, h2, h3 { color: var(--heading); font-weight: 600; line-height: 1.12; }
 h1 { margin-block: .45rem 1.35rem; font-size: clamp(3.5rem, 7vw, 6rem); }
 h2 { font-size: clamp(2.1rem, 4.5vw, 3.4rem); }
-.motto { border-left: 4px solid var(--orange); padding: .35rem 0 .35rem 1rem; color: var(--emphasis); font-size: 2rem; font-weight: 650; line-height: 1.2; }
+.motto { color: var(--emphasis); font-size: 2rem; font-weight: 650; line-height: 1.2; }
 .bio { max-width: 47rem; margin-top: 1.5rem; font-size: clamp(1rem, 1.6vw, 1.24rem); }
-.contact { display: block; width: fit-content; margin: 1rem 0 0; font-weight: 500; overflow-wrap: anywhere; }
+.contact { display: block; width: fit-content; margin: 1rem auto 0; font-weight: 500; overflow-wrap: anywhere; }
 .skip + header a:focus-visible { outline-offset: 4px; }
 
 .section-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.75fr); align-items: start; gap: 2.5rem; }
@@ -79,9 +78,9 @@ h3 a { text-decoration: none; }
 h3 a:hover { text-decoration: underline; }
 h3 { margin-block: .4rem .65rem; font-size: clamp(1.15rem, 2.1vw, 1.45rem); line-height: 1.35; }
 .papers li > p + p { margin-top: .2rem; }
-.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem 2rem; padding-block: 1rem 3rem; }
+.site-footer { display: grid; justify-items: center; gap: .45rem; padding: 4rem 1.25rem; text-align: center; }
 
 @media (max-width: 760px) {
   .wrap { width: calc(100% - 2.5rem); }
-  .about-content, .section-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .section-grid { grid-template-columns: 1fr; gap: 1.5rem; }
 }
