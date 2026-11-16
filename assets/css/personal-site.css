@@ -34,7 +34,7 @@ nav a:hover { text-decoration: underline; }
 
 section { padding-bottom: clamp(1.5rem, 4vw, 3rem); }
 body { min-height: 100vh; }
-.about, .site-footer {
+.about {
   background:
     radial-gradient(ellipse at 35% 48%, #ecb6ce 0%, transparent 63%),
     radial-gradient(ellipse at 65% 49%, #ffd0a2 0%, transparent 62%);
@@ -78,7 +78,32 @@ h3 a { text-decoration: none; }
 h3 a:hover { text-decoration: underline; }
 h3 { margin-block: .4rem .65rem; font-size: clamp(1.15rem, 2.1vw, 1.45rem); line-height: 1.35; }
 .papers li > p + p { margin-top: .2rem; }
-.site-footer { display: grid; justify-items: center; gap: .45rem; padding: 4rem 1.25rem; text-align: center; }
+.site-footer {
+  display: grid;
+  justify-items: center;
+  gap: .45rem;
+  padding-block: clamp(2rem, 5vw, 4rem);
+  background:
+    radial-gradient(ellipse at 99% 102%, #ffc58e, transparent 56%),
+    radial-gradient(ellipse at 83% 104%, #ecb6ce, transparent 62%);
+}
+.footer-contact { text-align: left; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  margin-top: 1.5rem;
+  border: 1px solid #cc8751;
+}
+.contact-grid > div { min-width: 0; padding: clamp(1rem, 3vw, 2rem); }
+.contact-grid > div + div { border-inline-start: 1px solid #cc8751; }
+.contact-grid h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+.contact-grid a { display: block; overflow-wrap: anywhere; }
+.contact-grid address { font-style: normal; }
+
+@media (max-width: 760px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid > div + div { border-inline-start: 0; border-top: 1px solid #cc8751; }
+}
 
 @media (max-width: 760px) {
   .wrap { width: calc(100% - 2.5rem); }
