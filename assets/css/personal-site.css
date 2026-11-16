@@ -114,7 +114,7 @@ h3 { margin-block: .4rem .65rem; font-size: clamp(1.15rem, 2.1vw, 1.45rem); line
 .project-award { margin-top: 1rem; color: var(--link); }
 .project-summary { margin-bottom: .65rem; font-size: .95rem; }
 
-.education h2 { color: #705b79; font-size: clamp(1.65rem, 3vw, 2.4rem); }
+.education h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); }
 .education-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
