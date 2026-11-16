@@ -24,7 +24,7 @@ strong { color: var(--emphasis); font-weight: 700; }
 .skip { position: absolute; inset: 1rem auto auto 1rem; padding: .5rem 1rem; background: white; transform: translateY(-200%); }
 .skip:focus { transform: none; z-index: 2; }
 
-.site-header { position: absolute; inset: 0 0 auto; z-index: 1; }
+.site-header { background: #faf4e9; }
 .header-content, nav { display: flex; align-items: center; flex-wrap: wrap; }
 .header-content { justify-content: space-between; gap: .35rem 2rem; padding-block: 1.5rem; }
 .wordmark { color: var(--heading); font-size: 1.4rem; font-weight: 600; text-decoration: none; }
@@ -40,7 +40,7 @@ body {
     radial-gradient(ellipse at 92% 22%, #ffd2a5, transparent 63%),
     linear-gradient(145deg, #f5f0eb, #f8e5ef 60%, #faeee3);
 }
-.about { padding-top: clamp(7rem, 11vw, 11rem); }
+.about { padding-top: clamp(2rem, 5vw, 4rem); }
 .panel {
   padding: clamp(1.4rem, 5vw, 4rem);
   border-radius: clamp(1rem, 2.5vw, 2rem);
@@ -54,18 +54,14 @@ body {
   gap: clamp(1.5rem, 5vw, 4rem);
 }
 .portrait {
-  display: grid;
-  align-content: center;
-  justify-items: center;
+  display: block;
   width: min(100%, 22rem);
   aspect-ratio: 1;
   margin-inline: auto;
   border-radius: 50%;
-  background: #ddd8ef;
-  color: var(--heading);
+  object-fit: cover;
+  object-position: 72% center;
 }
-.portrait span:first-child { font-size: clamp(3rem, 8vw, 6rem); font-weight: 600; line-height: 1.1; }
-.portrait span:last-child { font-size: .875rem; }
 .label, .year { font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 h1, h2, h3 { color: var(--heading); font-weight: 600; line-height: 1.12; }
 h1 { margin-block: .45rem 1.35rem; font-size: clamp(3.5rem, 7vw, 6rem); }
@@ -79,6 +75,8 @@ h2 { font-size: clamp(2.1rem, 4.5vw, 3.4rem); }
 .papers { list-style: none; margin: 0; padding: 0; }
 .papers li + li { margin-top: 2rem; }
 .year { color: #8b3961; }
+h3 a { text-decoration: none; }
+h3 a:hover { text-decoration: underline; }
 h3 { margin-block: .4rem .65rem; font-size: clamp(1.15rem, 2.1vw, 1.45rem); line-height: 1.35; }
 .papers li > p + p { margin-top: .2rem; }
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem 2rem; padding-block: 1rem 3rem; }
