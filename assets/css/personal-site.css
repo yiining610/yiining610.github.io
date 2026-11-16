@@ -109,3 +109,7 @@ h3 { margin-block: .4rem .65rem; font-size: clamp(1.15rem, 2.1vw, 1.45rem); line
   .wrap { width: calc(100% - 2.5rem); }
   .section-grid { grid-template-columns: 1fr; gap: 1.5rem; }
 }
+
+.project img { display: block; width: 100%; height: auto; border-radius: .65rem; }
+.project-award { margin-top: 1rem; color: var(--link); }
+.project-summary { margin-bottom: .65rem; font-size: .95rem; }
